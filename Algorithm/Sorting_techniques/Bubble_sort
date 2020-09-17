@@ -1,0 +1,14 @@
+def bubblesort(l1):
+    for i in range(len(l1)-1):
+        for j in range(len(l1)-1-i):
+            if l1[j]>l1[j+1]:                  #this is for ascending order for descending just reverse sign use l1[j]<l1[j+1]
+                l1[j],l1[j+1]=l1[j+1],l1[j]   #swapping
+          
+n=int(input("Enter no of items:"))
+l1=[]
+for i in range(n):
+    ele=int(input())
+    l1.append(ele)
+print("Unsorted List:",l1)
+bubblesort(l1)
+print("Sorted List:",l1)
