@@ -1,0 +1,17 @@
+def insertion_sort(l1):
+    for i in range(1,len(l1)):
+        current_element=l1[i]
+        pos=i
+        while current_element<l1[pos-1] and pos>0:
+            l1[pos]=l1[pos-1]
+            pos=pos-1
+        l1[pos]=current_element
+
+n=int(input("Enter no of elements: "))
+l1=[]
+for i in range(n):
+    ele=int(input())
+    l1.append(ele)
+print("Unsorted list is: ",l1)
+insertion_sort(l1)
+print("Sorted list is: ",l1)
