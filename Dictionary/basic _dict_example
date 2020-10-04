@@ -1,0 +1,9 @@
+l1=[1,2,3,4]
+l2=['one','two','three','four']
+dict1=dict(zip(l1,l2))                     #it is to convert two list into dictionary
+print(dict1)
+print(dict1.keys())                        # it gives all key in dictionary
+print(dict1.values())                      #it gives all value in dictionary
+print(dict1.items())                       #it gives both keys and values
+print(dict1[9])                            #it gives ous key at particular place and if key not present then gives ous key error
+print(dict1.get(9))                        #it gives ous key at particular place and if key not present then gives ous None in Output
