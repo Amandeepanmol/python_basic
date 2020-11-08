@@ -1,0 +1,17 @@
+from tkinter import *
+def LoginPage():
+    root=Tk()
+    root.title("Welcome_to_Login_Page")
+    l1=Label(root, text="Please enter login details",fg='red',bg='yellow').pack()
+    l2=Label(root, text="").pack()
+    l3=Label(root, text="Username",fg='black',bg='orange').pack()
+    username_login_entry = Entry(root, textvariable="username")
+    username_login_entry.pack()
+    Label(root, text="").pack()
+    Label(root, text="Password").pack()
+    password__login_entry = Entry(root, textvariable="password", show= '*',fg='grey',bg='white')
+    password__login_entry.pack()
+    Label(root, text="").pack()
+    Button(root, text="Login", padx=5, pady=10).pack()
+    root.mainloop()
+LoginPage()
